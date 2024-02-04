@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take a moment to complete this survey.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="100" required>
+
+      <label for="dropdown">Select your gender:</label>
+      <select id="dropdown" name="gender">
+        <option value="" disabled selected>Select an option</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <fieldset>
+        <legend>How did you hear about us?</legend>
+        <label><input type="radio" name="hear-about" value="friend">Friend</label>
+        <label><input type="radio" name="hear-about" value="social-media">Social Media</label>
+        <label><input type="radio" name="hear-about" value="search-engine">Search Engine</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What products are you interested in?</legend>
+        <label><input type="checkbox" name="products" value="product-1">Product 1</label>
+        <label><input type="checkbox" name="products" value="product-2">Product 2</label>
+        <label><input type="checkbox" name="products" value="product-3">Product 3</label>
+      </fieldset>
+
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
